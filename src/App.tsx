@@ -20,7 +20,7 @@ import "react-toastify/dist/ReactToastify.css";
 import { ToastContainer } from "react-toastify";
 import AssignmentResults from "./components/AssignmentResults";
 
-import BlogOverview from "./shards-dashboard/src/views/BlogOverview";
+
 axios.defaults.baseURL = config.apiBase;
 axios.defaults.withCredentials = true;
 
@@ -133,7 +133,6 @@ function App() {
         <UserSetup path="/user-setup" />
         <Assignment path="/assignment/:assignmentId" />
         <AssignmentResults path="/results/:assignmentId" />
-        <BlogOverview path = "/admin"/>
       </Router>
     </div>
   );
